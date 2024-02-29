@@ -29,3 +29,11 @@ names = ["Francis", "Elizabeth", "Margaret", "Catherine", "Anthony", "Andrew", "
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+print(names)
+print(len(names))
+names.append("Nicholas")
+print(names)
+print(len(names))
+names.sort()
+print(names)
+print(len(names))

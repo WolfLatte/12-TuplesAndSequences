@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (2 pts)
+# DONE: 1. (2 pts)
 #   
 #   This module is going to look very similar to m1 in the Session 10 Coding
 #   Exercises, but this time we will use tuples instead of lists.
@@ -13,9 +13,10 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
-
+recipes = ("stir fry", "chicken parmesan", "pasta", "chili")
+print(recipes)
 ###############################################################################
-# TODO: 2. (2 pts)
+# DONE: 2. (2 pts)
 #   
 #   For this _TODO_, write a line of code that accesses the *second* item in the
 #   tuple (remember the index of the first item is 0) and prints the item. Make
@@ -23,9 +24,9 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
-
+print(recipes[1])
 ###############################################################################
-# TODO: 3. (2 pts)
+# DONE: 3. (2 pts)
 #   
 #   For this _TODO_, write some code that changes the *third* item to a
 #   different meal that you don't already have in your tuple. Once you have
@@ -35,11 +36,15 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+change_recipe = list(recipes)
+change_recipe[2] = "fettuccine"
+recipes = tuple(change_recipe)
 
-###############################################################################
-# TODO: 4. (2 pts)
+print(recipes)
+##############################################################################
+# DONE: 4. (2 pts)
 #   
-#   For this _TODO_, write a some code that adds a recipe to the end of
+#   For this _TODO_, write some code that adds a recipe to the end of
 #   the tuple. Once you have done this, print the tuple. Remember that tuples
 #   are immutable (can't be changed) so you will need to convert it to a list,
 #   do your modification, and convert it back again.
@@ -49,9 +54,12 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
-
+more_recipes = list(recipes)
+more_recipes.append("hamburgers")
+recipes = tuple(more_recipes)
+print(recipes)
 ###############################################################################
-# TODO: 5. (2 pts)
+# DONE: 5. (2 pts)
 #   
 #   For this _TODO_, write some code that removes the last item from the
 #   tuple. Once you have done this, print the tuple. Remember that tuples are
@@ -63,7 +71,10 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
-
+remove_recipe = list(recipes)
+remove_recipe.pop()
+recipes = tuple(remove_recipe)
+print(recipes)
 ###############################################################################
 # TODO: 6. (2 pts)
 #
@@ -77,3 +88,9 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+(chinese, italian, pasta_type, mexican) = recipes
+
+print(chinese)
+print(italian)
+print(pasta_type)
+print(mexican)
